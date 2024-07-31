@@ -1,32 +1,49 @@
-# Getting Started with Create React App
+# User Registration Form
+
+## Overview
+
+The User Registration Form is a web application built with React.js for the frontend and Express.js with MongoDB for the backend. It allows users to register, view, and delete their accounts. The application includes a search feature to quickly find registered users by name or email.
+
+## Features
+
+- User registration with name, email, and password.
+- View all registered users.
+- Search for users by name or email.
+- Delete registered users.
+- Responsive design using Bootstrap.
+
+## Tech Stack
+
+- **Frontend:** HTML, CSS, JavaScript, React.js, Bootstrap
+- **Backend:** Express.js
+- **Database:** MongoDB
+- **Others:** Axios for HTTP requests, Mongoose for MongoDB object modeling
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-In the project directory, you can run:
 
-### `npm start`
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js (v14 or higher)
+- MongoDB account (for cloud hosting or local setup)
+- Git (for cloning the repository)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### To Run the Project
 
-### `npm test`
+1. First, clone the repository by using the command `git clone https://github.com/your-username/user-registration-form`.
+   
+2. Next, navigate to the project directory by running `cd user-registration-form`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Install the dependencies for the backend by navigating to the backend folder and running `npm install`. After that, go back to the root directory and install the frontend dependencies by running `npm install`.
 
-### `npm run build`
+4. Create a `.env` file in the backend directory and include the following environment variables: `MONGODB_URI="your_mongodb_connection_string"` and `PORT=5000`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. To start the backend server, make sure you are in the backend directory and run the command `node server.js`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6. Then, start the frontend development server by navigating back to the frontend directory and executing `npm start`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+7. Open your web browser and navigate to `http://localhost:3000` to view the application.
 
-This project only include the front part of the assignment.
-It is build using HTML, CSS, JavaScript, React JS.
-Duration of the project - 2 DAYS
+8. Finally, you can use a tool like MongoDB Compass to interact with your database.
